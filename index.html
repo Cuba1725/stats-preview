@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily:{
+          inter:['Inter', 'sans-serif'],
+          lexend:[ 'Lexend Deca', 'sans-serif']
+        },
+        backgroundImage: {
+        'image-header': "url('./images/image-header-mobile.jpg')",        
+      }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-[#090B1A]">
+  <section class="text-white w-screen sm:h-screen sm:grid sm:place-content-center ">
+    <div 
+      class="
+        m-7  max-w-screen-md         
+        rounded-xl 
+        bg-[#1B1938]
+        sm:flex sm:flex-row-reverse
+      ">
+      <div class="w-full relative">
+        <div class="bg-[#AA5CDB]/50 absolute rounded-t-xl sm:rounded-r-lg h-full w-full"></div>
+        <img class="w-full rounded-t-xl inline-block sm:hidden" src="./images/image-header-mobile.jpg" alt="">        
+        <img class="hidden sm:inline-block sm:rounded-r-lg h-full" src="./images/image-header-desktop.jpg" alt="">
+      </div>
+      <div class="sm:flex sm:flex-col sm:w-full sm:my-6 sm:mr-8 sm:ml-8 sm:pr-5">
+        <div class="text-center my-6 sm:text-left">
+          <h1 class="text-2xl font-bold px-10 py-5 sm:p-0 font-inter">Get <span class="text-[#AA5CDB]">insights</span> that help your business grow.</h1>
+          <p class="text-sm font-lexend px-8 sm:px-0 sm:py-4 font-thin">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+            experience, and overall efficiency.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:justify-between text-center font-inter"> 
+            <div class="pb-4">
+              <h1 class="text-2xl font-bold">10k+</h1>
+              <p class="uppercase font-thin text-xs tracking-wider">companies</p>
+            </div>
+            
+            <div class="pb-4">
+              <h1 class="text-2xl font-bold">314</h1>
+              <p class="uppercase font-thin text-xs tracking-wider">templates</p>
+            </div>
+            
+            <div class="pb-4">
+              <h1 class="text-2xl font-bold">12m+</h1>
+              <p class="uppercase font-thin text-xs tracking-wider">queries</p>
+            </div>
+          </div>
+      </div>
+    </div>
+        
+      <div class="attribution pb-3">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Cuba😎</a>.
+      </div>
+    </section>
+</body>
+</html>
